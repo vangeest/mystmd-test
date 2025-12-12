@@ -1,55 +1,16 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: f4b93bd6-ffe3-44bc-9231-9f5d0f8c1d71
-  license: MIT
-  title: "book-title-yml"
-  description: "Informatica-opdrachten voor leerlingen van het Stanislascollege Westplantsoen in Delft"
-  keywords: ["informatica","python","sql"]
-  # authors: ["Sander van Geest"] # this is displayed on the top of every page
-  github: https://github.com/informaticascw/informaticascw.github.io
-
-  # To autogenerate a Table of Contents, run "myst init --write-toc"  
-  # a toc is neccessary to show root-pages
-  
-
   toc:
-    - file: _book-file.md
-    - title: Chapter-A-title-yml
-      file: chapter-A-dir/_chapter-A-file.md
+    - file: root.md
+    - title: Part A title
+      file: part-A.md
       children:
-        - file: chapter-A-dir/section-A-1-file.md
-        - file: chapter-A-dir/section-A-2-file.md
-    - title:  Chapter-B-title-yml
-      file: chapter-B-dir/_chapter-B-file.md
+        - file: page-A-1.md
+        - file: page-A-2.md
+    - title:  part B title
       children:
-        - file: chapter-B-dir/section-B-1-file.md
-        - file: chapter-B-dir/section-B-2-file.md
+        - file: page-B-1.md
+        - file: page-B-2.md
 
-  numbering:
-    title:
-      enabled: true
-    heading_1:
-      enabled: true
-    heading_2:
-      enabled: true
-    heading_3:
-      enabled: true
-    heading_4:
-      enabled: true 
-    heading_5:
-      enabled: true
-    heading_6:
-      enabled: true
 site:
   template: book-theme
-  options:
-  #  hide_outline: true # hide document navigation column on the right side of the contents, unfortunatelly the content doesn't go wider
-  #  folders: true # keeps folder names in URL, 
-  #     works with myst-server, 
-  #     doesn't work with static if you you index.md as root, but works using root.md
-  #     doesn't work with static if you you use {toc} in you .md files (links don't work)
-  #  hide_title_block: true # prevent header 1 on top of page being displayed
-    favicon: images/informatica-logo.ico
-    logo: images/informatica-logo.svg
-    logo_text: Informatica
