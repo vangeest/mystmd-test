@@ -1,5 +1,5 @@
 # mystmd
-Repository created to illustratie issue "Hierachy in toc not respected when using children of file" on https://github.com/jupyter-book/mystmd/
+Repository created to illustratie issue https://github.com/jupyter-book/mystmd/issues/2589
 
 # Summary
 
