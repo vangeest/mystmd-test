@@ -1,11 +1,26 @@
 # mystmd
-Repository to test features of MySTmd in a Codespace
+Repository created to illustratie issue "Hierachy in toc not respected when using children of file" on https://github.com/jupyter-book/mystmd/
 
-## quickstart with this repo
-1. Create Codespace from this repository
-2. In terminal execute command `./start.sh`
-4. Confirm popup to MyST-static files in browser
+# Summary
 
-After editing files a reload of the webpages shows the result, `start.sh` automatically rebuilds html.
+The hierarchy is respected in case of a title with children
 
-Output is shown in terminal. In case anything crashed, manually start `./start.sh` again, old processed will be killed.
+The hierarchy is not respected in case of a file with children
+
+This seems inconsistent to me. I'd expect the hierachy to be respected in all cases.
+
+
+# Observed behaviour
+
+Page A 1
+![Page-A-1](Page-A-1.png)
+
+Page B 2
+![Page-B-1](Page-B-1.png)
+
+# Expected behaviour
+
+Red ellipse on page A-1 should be "Part A" instead of "index"
+
+Red rectangle on page B-1 should be "Part A" instead of "index"
+
