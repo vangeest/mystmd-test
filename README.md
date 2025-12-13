@@ -19,4 +19,3 @@ Output is shown in terminal. In case anything crashed, manually start `./start.s
 
 Not done yet:
 1. add LaTex for pdf (this can be done by adding a feature to the devcontainer)
-
